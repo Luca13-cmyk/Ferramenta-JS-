@@ -1,0 +1,27 @@
+var Lonely = (function(){
+
+var body = document.getElementById('demo');
+
+return {
+	
+    write: function(text){
+    
+    	return body.innerHTML = text
+    	
+    }
+
+
+}
+
+
+
+
+}());
+
+var tex = {
+	'Amanda': 'Lula livre',
+    'Rafaela': 'Bolsomito'
+
+}
+
+Lonely.write.call(tex, tex.Rafaela)

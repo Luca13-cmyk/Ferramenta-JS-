@@ -6,13 +6,14 @@ Formas parecidas com o Python
 
 l_. Luca Negrette ._l
 
+* = Somente com números
 
 */
 
-	function sum(array){
+	function sum(array){ 
 		soma = 0;
-		for (var i = 0; i < arr.length; i++) { // * Soma dos números de um array
-			soma += arr[i]
+		for (var i = 0; i < array.length; i++) { // * Soma dos números de um array
+			soma += array[i]
 		}
 		return soma
 	} // Sum
@@ -34,3 +35,25 @@ l_. Luca Negrette ._l
 		});
 		return valores
 	} // Ran -> random
+	function range(min, max, meth=1){
+		// Ex: var numeros =  range(5, 20, -5); * Retornar uma sequência de números especificados com o argumento
+	cache = [];
+	if (meth === 1) {
+		for (i = min; i < max; i++){
+			cache.push(i)
+		}
+	} else if (meth === -1){
+		for (i = max; i > min; i-- ){
+			cache.push(i)
+		}
+	} else if (meth > 1){
+		for (i = min; i < max; i += meth){
+			cache.push(i)
+		}
+	} else if (meth < -1){
+		for (i = max; i > min; i += meth){
+			cache.push(i)
+		}
+	}
+	return cache
+	} // Range

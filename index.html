@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Demo</title>
+	<link rel="stylesheet" type="text/css" href="ferramentas.css">
+</head>
+<body>
+
+
+	<a href="#">CapsOn</a>
+	<script type="text/javascript" src="ferramentas.js"></script>
+	<script type="text/javascript" src="utilies.js"></script>
+	<script type="text/javascript">
+		function Data(nome, custo, perda){
+			this.nome = nome;
+			this.custo = custo;
+			this.perda = perda;
+			this.check = function(){
+				return this.custo - this.perda;
+			}
+		}
+		var privilege = new Data("Privilege", 250, 100);
+
+		var alea = randomNum({
+			num1: 100,
+			num2: 5
+		})
+		
+	</script>
+</body>
+</html>

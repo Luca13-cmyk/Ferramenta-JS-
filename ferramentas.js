@@ -57,3 +57,8 @@ l_. Luca Negrette ._l
 	}
 	return cache
 	} // Range
+	function randomNum(settings){
+		return Math.floor((Math.random() * settings.num1) + settings.num2)
+	}
+
+	//505

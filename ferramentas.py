@@ -78,6 +78,42 @@ def key_has_value(key, value, **kwargs):
         return False
 
 
+def porcentagem_de(porcent, numero):
+    """
+    Calcula a porcentagem do numero especificado
+    EX:
+        print(porcentagem_de(10, 245))
+        10 % de 145 e quanto?
+
+    :param porcent: porcentagem%
+    :param numero: numero
+    :return: retorna o resultado da porcentagem
+    """
+    try:
+        ret = (porcent * numero) / 100
+        return ret
+    except TypeError:
+        print("Digite um numero valido !")
+
+
+def porcentagem_qnt(valor, numero):
+    """
+    retorna a porcentagem do valor especificado em relacao ao numero
+    EX:
+        print(porcentagem_qnt(10, 100))
+        10 e quantos % de 100
+
+    :param valor: valor
+    :param numero: numero
+    :return: ret%
+    """
+    try:
+        ret = (valor * 100) / numero
+        return ret
+    except TypeError:
+        print("Digite um numero valido !")
+
+
 
 
 

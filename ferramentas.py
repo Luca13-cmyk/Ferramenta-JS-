@@ -78,7 +78,7 @@ def key_has_value(key, value, **kwargs):
         return False
 
 
-def porcentagem_de(porcent, numero):
+def porcentagem_de(porcent, numero, valor=False):
     """
     Calcula a porcentagem do numero especificado
     EX:
@@ -91,6 +91,8 @@ def porcentagem_de(porcent, numero):
     """
     try:
         ret = (porcent * numero) / 100
+        if valor:
+            return numero - ret
         return ret
     except TypeError:
         print("Digite um numero valido !")
